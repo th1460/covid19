@@ -3,8 +3,6 @@ require(shiny)
 require(magrittr)
 require(thematic)
 
-readRenviron(".Renviron")
-
 drv <-
   RJDBC::JDBC("com.ibm.db2.jcc.DB2Driver", "jars/db2jcc4.jar")
 

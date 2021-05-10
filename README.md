@@ -39,3 +39,9 @@ docker push th1460/dash-covid
 # Deploy shiny
 ibmcloud cf push dash-covid --docker-image th1460/dash-covid -k 2G
 ```
+
+## CI/CD
+
+Reference to CI/CD used here: 
+
+https://github.com/marketplace/actions/deploy-to-ibm-cloud-foundry

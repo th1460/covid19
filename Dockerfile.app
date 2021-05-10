@@ -41,9 +41,6 @@ EXPOSE 8080
 # Copy further configuration files into the Docker image
 COPY shiny-server.sh /usr/bin/shiny-server.sh
 
-# Copy environment variables
-COPY .Renviron /srv/shiny-server/
-
 # Jar file
 COPY jars /srv/shiny-server/jars
 
