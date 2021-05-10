@@ -2,6 +2,8 @@
 
 Repository to dashboard about Covid19 data from South America and serverless function to update data.
 
+![](covid19.png)
+
 ## IBM Functions
 
 - `Dockerfile.update`
@@ -22,6 +24,8 @@ zip -r update_covid.zip exec read_update_data.R .Renviron
 # Create function
 ibmcloud fn action create update-covid19 update_covid.zip --docker th1460/update-covid --web true
 ```
+
+The IBM Functions to update the data work with cronjob configured in IBM Cloud console.
 
 ## Cloud foundry
 
